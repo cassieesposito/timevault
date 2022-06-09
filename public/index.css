@@ -1,0 +1,103 @@
+body {
+    background: #222222;
+    font-family: Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
+    font-size: small;
+    margin: 0.5em 0 1em;
+    text-align: center;
+}
+
+#form_container {
+    background: #fff;
+    margin: 0 auto;
+    text-align: left;
+    width: 50em;
+}
+
+#top {
+    height: 10px;
+    margin: 10px auto 0;
+    width: 52em;
+}
+
+form {
+    margin: 1.5em 1.5em 0;
+    padding: 0 0 1.5em;
+}
+
+.form_description {
+    border-bottom: 1px dotted #ccc;
+    margin: 0 0 1em;
+}
+
+.form_description h2 {
+    font-size: 160%;
+    font-weight: 400;
+    margin: 0 0 3px;
+}
+
+.form_description p {
+    font-size: 95%;
+    line-height: 130%;
+    margin: 0 0 12px;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+textarea {
+    background: #fff url(../../../images/shadow.gif) repeat-x top;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-top: 1px solid #7c7c7c;
+    color: #333;
+    font-size: 100%;
+    margin: 0;
+    padding: 2px 0;
+    padding-left: .25em;
+}
+
+textarea {
+    width: 99%;
+    height: 20em;
+}
+
+div.row {
+    color: #222;
+    font-size: 95%;
+    font-weight: 700;
+    display: block;
+    padding-top: 10px;
+}
+
+div.leftHalf {
+    width: 50%;
+    display: inline-block;
+}
+
+div.rightHalf {
+    width: 50%;
+    float: right;
+}
+
+input.half {
+    width: 80%;
+}
+
+input.whole {
+    width: 99%;
+}
+
+input[type=submit] {
+    overflow: visible;
+    padding: 0 7px;
+    width: auto;
+    font-size: 120%;
+    margin-right: 5px;
+    display: block;
+    margin-top: 10px;
+}
+
+input:invalid {
+    border: 1px solid red
+}

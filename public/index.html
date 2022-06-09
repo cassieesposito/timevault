@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Welcome to the Time Vault!</title>
+    <link rel="stylesheet" type="text/css" href="index.css" media="all">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body id="main_body">
+
+    <img id="top" src="top.png" alt="">
+    <div id="form_container">
+        <form id="form" method="post" action="/nextSteps">
+            <div class="form_description">
+                <h2>Welcome to the Time Vault</h2>
+                <p>Where you can send E-mail to the future!</p>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="leftHalf">
+                        <label for="fromName">Your Name <br></label>
+                        <input class="half" id="fromName" name="fromName" type="text" maxlength="255" value="">
+                    </div>
+                    <div class="rightHalf">
+                        <label for="fromEmail">Your E-mail Address <span style="color:red">*</span> <br></label>
+                        <input class="half" id="fromEmail" name="fromEmail" type="email" maxlength="255" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="leftHalf">
+                        <label for="toName">Recipient Name <br></label>
+                        <input class="half" id="toName" name="toName" type="text" maxlength="255" value="">
+                    </div>
+                    <div class="rightHalf">
+                        <label for="toEmail">Recipient E-mail Address <span style="color:red">*</span> <br></label>
+                        <input class="half" id="toEmail" name="toEmail" type="email" maxlength="255" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="subject">Subject<br></label>
+                    <input id="subject" name="subject" type="text" maxlength="255" class="whole" value="">
+                </div>
+                <div class="row">
+                    <label for="body">Body<br></label>
+                    <textarea id="body" name="body" class="whole"></textarea>
+                </div>
+                <div class="row">
+                    <label for="cal_month">Date to Send E-mail<span style="color:red">*</span><br>
+                    <input name="date" id="date" type="date" >
+                </div>
+                <div class="row" style="text-align: center;">
+                    <input id="saveForm" type="submit" name="submit" value="Send E-mail">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
