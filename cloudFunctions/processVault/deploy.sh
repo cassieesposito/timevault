@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-. ../common/deployVars.sh
+. $(dirname $(pwd))/common/deployVars.sh
 gcloud functions deploy 'TV-processVault'\
  --runtime=$RUNTIME\
  --service-account=$SERVICE_ACCOUNT\
