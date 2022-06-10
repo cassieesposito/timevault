@@ -89,7 +89,7 @@ def isEmail(email):
     if "." not in splitEmail[len(splitEmail) - 1]:
         validity = 0
 
-    # Allow emali address username to start with @ while rejecting no username
+    # Allow email address username to start with @ while rejecting no username
     if splitEmail[0] == "" and len(splitEmail) < 3:
         validity = 0
 
